@@ -13,3 +13,6 @@ echo "1"
 apt install apache2 -y
 echo "**CREATING DIRECTORIES**"
 mkdir -pv /var/www/html/files
+echo "**SETTING UP BASE**"
+rm -v /etc/apache2/sites-available/000-default.conf
+cp -v 000-default.conf /etc/apache2/sites-available
