@@ -12,6 +12,7 @@ echo "**INSTALLING BASE PACKAGES**"
 echo "1"
 apt install apache2 php -y
 echo "**CREATING DIRECTORIES**"
+rm -rv /var/www/html/*
 mkdir -pv /var/www/html/files
 chmod 755 -R /var/www/html/files
 echo "**SETTING UP BASE**"
