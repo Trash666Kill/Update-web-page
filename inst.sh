@@ -10,7 +10,7 @@ apt update && apt upgrade -y
 #Base packages*
 echo "**INSTALLING BASE PACKAGES**"
 echo "1"
-apt install apache2 -y
+apt install apache2 php -y
 echo "**CREATING DIRECTORIES**"
 mkdir -pv /var/www/html/files
 chmod 755 -R /var/www/html/files
