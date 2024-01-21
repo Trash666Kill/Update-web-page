@@ -9,7 +9,7 @@ apt install apache2 php -y
 echo "**CREATING DIRECTORIES**"
 rm -rv /var/www/html/*
 mkdir -pv /var/www/html/files
-chmod 755 -R /var/www/html/files
+chmod 777 -R /var/www/html/files
 echo "**SETTING UP BASE**"
 rm -v /etc/apache2/sites-available/000-default.conf
 cp -v 000-default.conf /etc/apache2/sites-available
